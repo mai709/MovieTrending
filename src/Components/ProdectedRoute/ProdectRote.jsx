@@ -5,6 +5,6 @@ export default function ProdectRote(props) {
   if(localStorage.getItem('token') !== null){
     return props.children;
   }else{
-   <Navigate to={'/login'} />
+   return <Navigate to={'/login'} />
   }
 }

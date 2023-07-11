@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MovieTrending/static/css/main.02bf213a.css",
-    "main.js": "/MovieTrending/static/js/main.41f1e1e3.js",
+    "main.js": "/MovieTrending/static/js/main.d18abac1.js",
     "static/js/787.571c000d.chunk.js": "/MovieTrending/static/js/787.571c000d.chunk.js",
     "static/media/fa-solid-900.ttf": "/MovieTrending/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/MovieTrending/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/MovieTrending/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/MovieTrending/index.html",
     "main.02bf213a.css.map": "/MovieTrending/static/css/main.02bf213a.css.map",
-    "main.41f1e1e3.js.map": "/MovieTrending/static/js/main.41f1e1e3.js.map",
+    "main.d18abac1.js.map": "/MovieTrending/static/js/main.d18abac1.js.map",
     "787.571c000d.chunk.js.map": "/MovieTrending/static/js/787.571c000d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02bf213a.css",
-    "static/js/main.41f1e1e3.js"
+    "static/js/main.d18abac1.js"
   ]
 }

@@ -25,7 +25,7 @@ function App() {
 
   let routers = createBrowserRouter([
     { path: "", element: <Layout userdata={userdata} setuserData={setuserData} /> , children: [
-      {index:true , element: <ProdectRote><Home/></ProdectRote> },
+      {index:true , element: <Home/> },
       {path:"movies" , element:<ProdectRote><Movies/></ProdectRote> },
       {path:"tvshow" , element: <ProdectRote><Tvshow/></ProdectRote>},
       {path:"people" , element:<ProdectRote><People/></ProdectRote> },

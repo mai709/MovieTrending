@@ -4,15 +4,12 @@ import { useParams } from 'react-router-dom';
 
 export default function MovieDetails() {
   let {id , mediaType } = useParams();
-  console.log(id)
-  console.log(mediaType)
   const [details , setDetails ] = useState({});
 
   async function getApiTrending(mediaType , id){
     
     let {data} = await axios.get(`https://api.themoviedb.org/3/${mediaType}/${id}?api_key=09b639ab0b2b1b51b00568871d53f9fe&language=en-US`)
     setDetails(data);
-    console.log(data)
   }
   useEffect(()=>{
     getApiTrending(mediaType , id)

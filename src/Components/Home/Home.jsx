@@ -11,7 +11,6 @@ export default function Home() {
   async function getApiTrending(mediaType , callback){
     let {data} = await axios.get(`https://api.themoviedb.org/3/trending/${mediaType}/week?api_key=09b639ab0b2b1b51b00568871d53f9fe`)
     callback(data.results);
-    console.log(data.results)
   }
   useEffect(()=>{
     getApiTrending('movie',setmovie)

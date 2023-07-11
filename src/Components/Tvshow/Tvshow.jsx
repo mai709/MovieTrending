@@ -6,12 +6,10 @@ let mediaType = 'tv'
 export default function Movies() {
   const [tv , setTv ] = useState([]);
   let numbers = new Array(10).fill(1).map((el , index)=> index+1 )
-  console.log(numbers);
 
   async function getApiTrending(page){
     let {data} = await axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=09b639ab0b2b1b51b00568871d53f9fe&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=${page}`)
     setTv(data.results);
-    console.log(data.results)
   }
   useEffect(()=>{
     getApiTrending(1)

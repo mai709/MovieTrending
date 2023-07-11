@@ -17,7 +17,6 @@ export default function Login({saveUserData}) {
     let {data} = await axios.post(`https://route-ecommerce.onrender.com/api/v1/auth/signin` , values).catch((err)=>{
       setapiError(err.response.data.message);
       setloading(false)
-      // console.log(err)
     })
     if(data.message ==="success"){
       localStorage.setItem('token',data.token);

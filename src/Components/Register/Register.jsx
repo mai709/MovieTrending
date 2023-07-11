@@ -21,7 +21,6 @@ export default function Register() {
       // setapiError(err.response.data.message);
       setapiError(` ${err.response.data.errors.param} : ${err.response.data.errors.msg}`)
       setloading(false)
-      // console.log(err)
     })
     if(data.message ==="success"){
       setloading(false);
@@ -40,9 +39,6 @@ export default function Register() {
     onSubmit:apiReq
     
   })
-  function hello (){
-    console.log('hello')
-  }
   return (
     <>
       <p className='text-capitalize text-info'>Register now</p>

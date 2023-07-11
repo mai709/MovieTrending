@@ -6,13 +6,11 @@ let mediaType = 'person'
 export default function Movies() {
   const [people , setpeople ] = useState([]);
   let numbers = new Array(10).fill(1).map((el , index)=> index+1 )
-  console.log(numbers);
 
   async function getApiTrending(page){
     let {data} = await axios.get(`https://api.themoviedb.org/3/person/popular?api_key=09b639ab0b2b1b51b00568871d53f9fe
 &language=en-US&page=${page}`)
     setpeople(data.results);
-    console.log(data.results)
   }
   useEffect(()=>{
     getApiTrending(1)
@@ -34,7 +32,6 @@ export default function Movies() {
     <nav aria-label="Page navigation example" className='d-flex justify-content-center'>
         <ul className="pagination">
             {numbers.map((page)=><li key={page} className="page-item" onClick={()=>{getApiTrending(page)}}><Link className="page-link">{page}</Link></li>)}
-                
         </ul>
     </nav>
   </>
